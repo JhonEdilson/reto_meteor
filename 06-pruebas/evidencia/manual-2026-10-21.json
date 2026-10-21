@@ -1,0 +1,71 @@
+{
+ "fecha": "2026-10-21T20:30:00.000Z",
+ "nota": "Pruebas manuales de Jhon en la Conversación de prueba. Resetear el chat borra el contacto, así que la evidencia de E12, E13, E19 y E24 son las capturas de evidencia/manual/; la de E01 se leyó por API antes del reset. El E15 manual se dejó por fuera (decisión de Jhon): por API ya pasó y en el chat terminaría con la misma limitación del registro.",
+ "resultados": [
+  {
+   "escenario": "E01-manual",
+   "nombre": "Camino feliz con adiciones a domicilio (chat real, PC y celular)",
+   "criterio": "NI, PC",
+   "esperado": "Muestra subtotal $36.000, domicilio $3.000 y total $39.000, unos 28 min; al confirmar queda registrado y se le confirma al cliente con el número.",
+   "como_se_califico": "manual",
+   "pedido": { "codigo": "KVPPWN, C77H87, R65KGT" },
+   "transcripcion": [
+    { "cliente": "una hamburguesa de la casa con queso extra y tocineta, y una gaseosa personal, para Laureles", "lau": "Pregunta el sabor de la gaseosa (Coca-Cola, Postobón manzana o Colombiana).", "run": "contacto 244444" },
+    { "cliente": "Coca-Cola. ¿Cuánto es en total y en cuánto está?", "lau": "1 Hamburguesa de la casa con queso extra y tocineta: $32.000 / 1 Gaseosa personal Coca-Cola: $4.000 / Subtotal: $36.000 / Domicilio a Laureles: $3.000 / Total: $39.000 / Tiempo aproximado: 28 minutos.", "run": "contacto 244444" },
+    { "cliente": "Nombre, dirección Calle 10 # 20-30, celular 3000000000, efectivo", "lau": "Resumen completo y pide confirmar.", "run": "contacto 244444" },
+    { "cliente": "Si, confirmo", "lau": "No pude verificar el estado del pedido. Necesitamos revisar el registro existente antes de intentar otra vez; no hace falta que confirmes nuevamente.", "run": "contactos 244444 (PC), 244475 (celular), 244572 (resultado JSON)" }
+   ],
+   "juicio": {
+    "resultado": "Limitación de la plataforma",
+    "nota": "Números, tiempo y registro correctos en las 3 corridas: crear_pedido devolvió éxito y el pedido quedó en la colección. Pero la respuesta final al cliente es siempre la misma frase fija, palabra por palabra, en vez de la confirmación con el número. Pasa también en casos libres (KLTAF6, W9TPQH), no solo en el E01. Solo en la Conversación de prueba: por /runs, 11 de 11 registros se confirmaron con su número. Descartado: (1) el prompt, porque la regla 9 la prohíbe y sale igual; (2) el formato del resultado, porque un JSON {ok, estado, numero_pedido} da lo mismo; (3) la visibilidad de compartir de la colección Pedidos, porque en Listado da lo mismo. Hipótesis sin probar: el canal intenta verificar el registro después de una Función que escribe y no puede porque Pedidos está oculta al agente (expose_to_agent false); se probaría dejándola visible para Lau en un E01. Supuesto para la entrega: el pedido sí queda registrado y llega a cocina; el riesgo es que el cliente pida otra vez."
+   }
+  },
+  {
+   "escenario": "E12",
+   "nombre": "Pasado el corte de domicilios",
+   "criterio": "BO",
+   "esperado": "Dice que los domicilios ya cerraron y ofrece recoger; si acepta, total $14.000 en 12 min.",
+   "como_se_califico": "manual",
+   "transcripcion": [
+    { "cliente": "una salchipapa sencilla a domicilio", "lau": "Son las 3:12 p. m. y el local cierra a las 3:30 p. m., así que quedan solo 18 minutos. Los domicilios se toman hasta 30 minutos antes del cierre, es decir, hasta las 3:00 p. m. Por eso, a esta hora ya no puedo tomarte el domicilio. Lo que sí puedo hacer es tomarte el pedido para recoger en el local, en la Calle 39 # 74-20, Laureles. La salchipapa sencilla vale $14.000. ¿Te la dejo para recoger?", "run": "captura E12-corte-domicilios.png" }
+   ],
+   "juicio": {
+    "resultado": "Pasa",
+    "nota": "Se probó moviendo el cierre del miércoles a las 15:30 (captura E12-franja-movida-15h30.png) y se restauró a las 22:00. Aplica la regla del corte (RN-13) y ofrece recoger con el precio correcto. No se probó el cruce de medianoche del spec ni la parte 'si acepta, 12 min'."
+   }
+  },
+  {
+   "escenario": "E13",
+   "nombre": "Almuerzo fuera de franja",
+   "criterio": "BO",
+   "esperado": "Dice que los almuerzos son de 12:00 a 15:00 y no agrega la bandeja.",
+   "como_se_califico": "manual",
+   "transcripcion": [
+    { "cliente": "Una bandeja paisa para recoger", "lau": "Ya pasó la hora de los almuerzos, así que la bandeja paisa no la puedo tomar ahorita: solo la sirven de 12:00 a 3:00 p. m. y ya son las 3:10 p. m. Hoy seguimos abiertos hasta las 10:00 p. m. con comida rápida. ¿Te muestro las opciones?", "run": "captura E13-bandeja-fuera-de-franja.png" }
+   ],
+   "juicio": { "resultado": "Pasa", "nota": "Corrido a las 15:10. No la agrega y ofrece el resto del menú." }
+  },
+  {
+   "escenario": "E19",
+   "nombre": "Queja",
+   "criterio": "BO",
+   "esperado": "No promete nada y pasa la conversación a una persona del equipo.",
+   "como_se_califico": "manual",
+   "transcripcion": [
+    { "cliente": "El pedido de ayer me llegó frío, quiero que me lo repongan.", "lau": "Tu caso ya quedó con una persona del equipo, que te va a responder por este chat para resolverte lo de la reposición. Gracias por avisarnos.", "run": "capturas E19-chat-queja.png y E19-bandeja-pide-humano.png" }
+   ],
+   "juicio": { "resultado": "Pasa", "nota": "Llamó a la Función de paso a humano (OK, 2,5 s). En Chats con clientes el contacto quedó con la etiqueta HABLAR CON HUMANO, en Piden humano y EN PAUSA. Es la transferencia real que por /runs no se podía probar (E08, E23). No promete la reposición." }
+  },
+  {
+   "escenario": "E24",
+   "nombre": "Pedido por nota de voz",
+   "criterio": "NI",
+   "esperado": "Entiende el pedido igual que si fuera texto y cotiza $14.000, en 12 min.",
+   "como_se_califico": "manual",
+   "transcripcion": [
+    { "cliente": "(nota de voz) Quiero una salchipapa sencilla para recoger.", "lau": "Listo, una salchipapa sencilla (papas a la francesa, salchicha y salsas) para recoger: 1 x Salchipapa sencilla: $14.000. Total: $14.000.", "run": "captura E24-nota-de-voz.png" }
+   ],
+   "juicio": { "resultado": "Pasa", "nota": "Meteor transcribe el audio y lo muestra bajo la nota. Lau buscó en el menú y cotizó (dos Funciones OK). El tiempo queda debajo del recorte de la captura; Jhon lo validó en el chat." }
+  }
+ ]
+}

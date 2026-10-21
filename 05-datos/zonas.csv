@@ -1,0 +1,9 @@
+zona,tarifa,tiempo_min,cubre,notas
+Laureles,3000,10,Sí,
+Estadio,3000,10,Sí,
+Conquistadores,4000,15,Sí,
+Belén,5000,20,Sí,
+La América,5000,20,Sí,
+Centro,6000,25,Sí,
+El Poblado,,,No,No hay domicilio: ofrecer recoger en el local
+Recoger en el local,0,0,Sí,"Calle 39 # 74-20, Laureles"

@@ -1,0 +1,60 @@
+{
+  "fecha": "2026-10-21T17:34:05.630Z",
+  "resultados": [
+    {
+      "escenario": "E06",
+      "nombre": "Sin queso gratinado",
+      "criterio": "NI, BO",
+      "esperado": "Avisa que hoy sale sin queso gratinado; si acepta, total $22.000 en 15 min.",
+      "conversation_id": 1887,
+      "auto_ok": true,
+      "checks": [
+        [
+          "total $22.000",
+          true
+        ],
+        [
+          "15 min",
+          true
+        ],
+        [
+          "llama cotizar_pedido",
+          true
+        ],
+        [
+          "sin **",
+          true
+        ],
+        [
+          "sin emoji",
+          true
+        ],
+        [
+          "sin código interno",
+          true
+        ]
+      ],
+      "pedido": null,
+      "transcripcion": [
+        {
+          "cliente": "una salchipapa especial, para recoger",
+          "lau": "Hola, soy Lau, la asistente virtual de Donde Toño. Tus datos (nombre, teléfono y dirección) los usamos solo para tu pedido.\n\nLa salchipapa especial trae papas, salchicha, chorizo y huevo, y vale $22.000. Ojo que por ahora no tiene queso gratinado porque se agotó.\n\n¿Así la quieres, o le agregamos algo más al pedido?",
+          "run": "run_01M5FRD7XWM1KT9BJQBA1WBVPB",
+          "herramientas": [
+            "mcp_meteor_meteor_search_items"
+          ]
+        },
+        {
+          "cliente": "Sí, así está bien. ¿Cuánto es en total y en cuánto está?",
+          "lau": "Una salchipapa especial: $22.000.\n\nPara recoger no hay domicilio, así que el total es $22.000. Estaría lista en aproximadamente 15 minutos.\n\n¿A nombre de quién la dejo?",
+          "run": "run_01M5FRDJQNN64BGAQESZM6ETC1",
+          "herramientas": [
+            "mcp_meteor_meteor_search_items",
+            "cotizar_pedido"
+          ]
+        }
+      ],
+      "juicio": null
+    }
+  ]
+}

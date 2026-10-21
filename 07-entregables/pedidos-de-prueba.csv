@@ -1,0 +1,33 @@
+﻿codigo,codigo_original,origen,cliente,telefono,tipo,direccion,barrio,zona,detalle,subtotal,domicilio,total,tiempo_estimado_min,pago,para_cuando,estado,notas_cocina,registrado_por
+Y3FN85,W9TPQH,"manual caso libre Jhon, Centro, colección en Listado (Conversación de prueba)",Carlos Martínez,3000000000,domicilio,"Calle 10 # 20-30, Centro",Centro,Centro,"2 x Salchipapa sencilla
+2 x Limonada de coco",46000,6000,52000,37,efectivo,Lo antes posible,Nuevo,,Lau
+YXAQ5T,KLTAF6,"manual caso libre Jhon, Belén (Conversación de prueba)",Camilo Cifuentes Miniño,3000000000,domicilio,Calle 10 # 20-30,Belén,Belén,"1 x Salchipapa sencilla
+1 x Limonada de coco",23000,5000,28000,32,efectivo,Lo antes posible,Nuevo,,Lau
+4DH48U,R65KGT,manual E01 con resultado JSON (Conversación de prueba),ana prueba2 E01,3000000000,domicilio,Calle 10 # 20-30,Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml · Coca-Cola",36000,3000,39000,28,efectivo,Lo antes posible,Nuevo,,Lau
+6EY5QB,C77H87,manual E01 celular (Conversación de prueba),Ana prueba E01,3000000000,domicilio,"Calle 10 # 20-30, Laureles",Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml · Coca-Cola",36000,3000,39000,28,efectivo,Lo antes posible,Nuevo,,Lau
+QE47ZS,KVPPWN,manual E01 (Conversación de prueba),E01,3000000000,domicilio,Calle 10 # 20-30,Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml · Coca-Cola",36000,3000,39000,28,efectivo,Lo antes posible,Nuevo,,Lau
+UB4F2Q,TJYSPT,eval E07,PRUEBA eval E07,3000000000,domicilio,"Calle 10 # 20-30, barrio Belén",Belén,Belén,2 x Salchipapa sencilla,28000,5000,33000,32,efectivo,Lo antes posible,Nuevo,,Lau
+ML59J3,JYNR5H,eval E01,PRUEBA eval E01,3000000000,domicilio,"Calle 10 # 20-30, barrio Laureles",Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml · Coca-Cola",36000,3000,39000,28,efectivo,Lo antes posible,Nuevo,,Lau
+DCX9A5,V6UUFF,"eval E17, corrida 2 (21-oct, key live)",PRUEBA eval E17,3000000000,recoger,,,,1 x Hamburguesa clásica (Huevo),21500,0,21500,15,efectivo,Lo antes posible,Nuevo,,Lau
+QWM922,8ATN82,"eval E15, corrida 2 (21-oct, key live)",PRUEBA eval E15,3000000000,domicilio,Calle 10 # 20-30,La América,La América,"1 x Hamburguesa de pollo
+1 x Hamburguesa de la casa (Carne adicional)
+1 x Jugo natural en leche · de mora",60000,5000,65000,38,efectivo,Lo antes posible,Nuevo,,Lau
+F4JDKZ,YGESC8,"eval E09, corrida 2 (21-oct, key live)",PRUEBA eval E09,3000000000,domicilio,"Calle 10 # 20-30, barrio Centro",Centro,Centro,2 x Perro sencillo,24000,6000,30000,33,efectivo,Lo antes posible,Nuevo,,Lau
+ZMC6YF,7FXY55,"eval E07, corrida 2 (21-oct, key live)",PRUEBA eval E07,3000000000,domicilio,"Calle 10 # 20-30, barrio Belén",Belén,Belén,2 x Salchipapa sencilla,28000,5000,33000,32,efectivo,Lo antes posible,Nuevo,,Lau
+CUARUG,HYN5DT,"eval E01, corrida 2 (21-oct, key live)",PRUEBA eval E01,3000000000,domicilio,"Calle 10 # 20-30, barrio Laureles",Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml · Coca-Cola",36000,3000,39000,28,efectivo,Lo antes posible,Nuevo,,Lau
+GKEFGA,89PT2C,"eval E17, corrida 1 (21-oct, key de prueba)",PRUEBA eval E17,3000000000,recoger,,,Recoger en el local,1 x Hamburguesa clásica (Huevo),21500,0,21500,15,efectivo,Lo antes posible,Prueba,,Lau
+RNL9EN,VGKZ8H,"eval E15, corrida 1 (21-oct, key de prueba)",PRUEBA eval E15,3000000000,domicilio,"Calle 10 # 20-30, barrio La América",La América,La América,"1 x Hamburguesa de pollo
+1 x Hamburguesa de la casa (Carne adicional)
+1 x Jugo natural en leche · de mora",60000,5000,65000,38,efectivo,Lo antes posible,Prueba,,Lau
+KH3BGZ,XDJZAY,"eval E09, corrida 1 (21-oct, key de prueba)",PRUEBA eval E09,3000000000,domicilio,"Calle 10 # 20-30, barrio Centro",Centro,Centro,2 x Perro sencillo,24000,6000,30000,33,efectivo,Lo antes posible,Prueba,,Lau
+6GWLLQ,H4EGXQ,"eval E07, corrida 1 (21-oct, key de prueba)",PRUEBA eval E07,3000000000,domicilio,"Calle 10 # 20-30, barrio Belén",Belén,Belén,2 x Salchipapa sencilla,28000,5000,33000,32,efectivo,Lo antes posible,Prueba,,Lau
+5RF7U2,TQ74UN,"chat 20-oct, prueba 5e (Jhon)",camiloPrueba,322XXXXXXX (oculto),domicilio,"Edificio Cr, apartamento 502",Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml · Coca-Cola",36000,3000,39000,28,efectivo,Lo antes posible,Prueba,,Lau
+ZXN62C,WE7DDJ,"API 20-oct, paso 3 (crear_pedido, recoger)",PRUEBA Claude 2,3000000000,recoger,,,,1 x Salchipapa sencilla,14000,0,14000,12,transferencia,Lo antes posible,Prueba,,Lau
+QVDSF3,UL8FFN,"API 20-oct, paso 3 (crear_pedido)",PRUEBA Claude,3000000000,domicilio,"Cra 70 # 44-10, apto 301",Laureles,Laureles,"1 x Hamburguesa de la casa (Queso extra, Tocineta)
+1 x Gaseosa personal 400 ml",36000,3000,39000,28,efectivo,Lo antes posible,Prueba,PRUEBA: borrar,Lau

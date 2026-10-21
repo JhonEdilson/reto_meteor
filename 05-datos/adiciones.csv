@@ -1,0 +1,10 @@
+codigo,adicion,precio,aplica_a,maximo,disponible
+AD-01,Queso extra,2500,"Hamburguesas, Perros",2,Sí
+AD-02,Tocineta,3500,Hamburguesas,2,Sí
+AD-03,Carne adicional,7000,Hamburguesas,1,Sí
+AD-04,Huevo,2000,"Hamburguesas, Perros, Salchipapas",1,Sí
+AD-05,Maicitos,2000,"Perros, Salchipapas",1,Sí
+AD-06,Aguacate,3000,"Hamburguesas, Almuerzos",1,No
+AD-07,Porción de papas,6000,"Hamburguesas, Perros",1,Sí
+AD-08,Chorizo,5000,"Salchipapas, Picadas",2,Sí
+AD-09,Salsa de ajo extra,0,Todos,3,Sí

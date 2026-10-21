@@ -1,0 +1,792 @@
+{
+  "flujo": "bd6946e6-f4a8-4271-9d1b-68bf1087ca50",
+  "fecha": "2026-10-20T22:56:20.196Z",
+  "fallas": 0,
+  "pruebas": [
+    {
+      "prueba": "E01",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-03",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-01",
+                "cantidad": 1
+              },
+              {
+                "codigo": "AD-02",
+                "cantidad": 1
+              }
+            ]
+          },
+          {
+            "codigo": "BEB-01",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Laureles"
+      },
+      "esperado": {
+        "total": 39000,
+        "tiempo": 28
+      },
+      "run": "9cf1b3f8-ce25-4acd-bfb3-1b2b9a9d75cf",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Laureles",
+        "detalle": "1 x Hamburguesa de la casa (Queso extra, Tocineta)\n1 x Gaseosa personal 400 ml",
+        "desglose": [
+          "1 x Hamburguesa de la casa (Queso extra, Tocineta): $32.000",
+          "1 x Gaseosa personal 400 ml: $4.000"
+        ],
+        "subtotal": 36000,
+        "domicilio": 3000,
+        "total": 39000,
+        "tiempo_estimado_min": 28
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E02",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "COM-01",
+            "cantidad": 1,
+            "bebida_combo": "BEB-04",
+            "adiciones": [
+              {
+                "codigo": "AD-01",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "total": 33500,
+        "tiempo": 15
+      },
+      "run": "1196f105-2c9f-46cd-993e-a93916c8a1e4",
+      "salida": {
+        "ok": true,
+        "tipo": "recoger",
+        "zona": "Recoger en el local",
+        "detalle": "1 x Combo Toño (con Limonada de coco, Queso extra)",
+        "desglose": [
+          "1 x Combo Toño (con Limonada de coco, Queso extra): $33.500"
+        ],
+        "subtotal": 33500,
+        "domicilio": 0,
+        "total": 33500,
+        "tiempo_estimado_min": 15
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E03",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PER-02",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-01",
+                "cantidad": 2
+              }
+            ]
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Estadio"
+      },
+      "esperado": {
+        "total": 24000,
+        "tiempo": 20
+      },
+      "run": "f2a99435-5dd8-4e17-b16e-d91f64c61715",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Estadio",
+        "detalle": "1 x Perro especial (Queso extra x2)",
+        "desglose": [
+          "1 x Perro especial (Queso extra x2): $21.000"
+        ],
+        "subtotal": 21000,
+        "domicilio": 3000,
+        "total": 24000,
+        "tiempo_estimado_min": 20
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E05",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PIC-02",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-08",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Conquistadores"
+      },
+      "esperado": {
+        "total": 54000,
+        "tiempo": 45
+      },
+      "run": "5b737023-4d97-4081-b8eb-0da88575102e",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Conquistadores",
+        "detalle": "1 x Picada familiar (Chorizo)",
+        "desglose": [
+          "1 x Picada familiar (Chorizo): $50.000"
+        ],
+        "subtotal": 50000,
+        "domicilio": 4000,
+        "total": 54000,
+        "tiempo_estimado_min": 45
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E06",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "SAL-02",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "total": 22000,
+        "tiempo": 15
+      },
+      "run": "b83510fb-4ec0-4df4-899e-3dc7404c9d5a",
+      "salida": {
+        "ok": true,
+        "tipo": "recoger",
+        "zona": "Recoger en el local",
+        "detalle": "1 x Salchipapa especial",
+        "desglose": [
+          "1 x Salchipapa especial: $22.000"
+        ],
+        "subtotal": 22000,
+        "domicilio": 0,
+        "total": 22000,
+        "tiempo_estimado_min": 15
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E07",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "SAL-01",
+            "cantidad": 2
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Belén"
+      },
+      "esperado": {
+        "total": 33000,
+        "tiempo": 32
+      },
+      "run": "a86fddeb-4b2f-4dd6-8c8b-6499e7842b03",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Belén",
+        "detalle": "2 x Salchipapa sencilla",
+        "desglose": [
+          "2 x Salchipapa sencilla: $28.000"
+        ],
+        "subtotal": 28000,
+        "domicilio": 5000,
+        "total": 33000,
+        "tiempo_estimado_min": 32
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E09",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PER-01",
+            "cantidad": 2
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Centro"
+      },
+      "esperado": {
+        "total": 30000,
+        "tiempo": 33
+      },
+      "run": "97e8b160-127d-4357-aa60-6ff659cbc275",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Centro",
+        "detalle": "2 x Perro sencillo",
+        "desglose": [
+          "2 x Perro sencillo: $24.000"
+        ],
+        "subtotal": 24000,
+        "domicilio": 6000,
+        "total": 30000,
+        "tiempo_estimado_min": 33
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E11",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PER-01",
+            "cantidad": 1
+          },
+          {
+            "codigo": "BEB-01",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Laureles"
+      },
+      "esperado": {
+        "total": 19000,
+        "tiempo": 18
+      },
+      "run": "0d6e0fb0-b90a-4388-9d74-544bf7a3d5fa",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Laureles",
+        "detalle": "1 x Perro sencillo\n1 x Gaseosa personal 400 ml",
+        "desglose": [
+          "1 x Perro sencillo: $12.000",
+          "1 x Gaseosa personal 400 ml: $4.000"
+        ],
+        "subtotal": 16000,
+        "domicilio": 3000,
+        "total": 19000,
+        "tiempo_estimado_min": 18
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E12",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "SAL-01",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "total": 14000,
+        "tiempo": 12
+      },
+      "run": "68f6e347-f404-469c-ba07-8b46594b7f15",
+      "salida": {
+        "ok": true,
+        "tipo": "recoger",
+        "zona": "Recoger en el local",
+        "detalle": "1 x Salchipapa sencilla",
+        "desglose": [
+          "1 x Salchipapa sencilla: $14.000"
+        ],
+        "subtotal": 14000,
+        "domicilio": 0,
+        "total": 14000,
+        "tiempo_estimado_min": 12
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E15",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-04",
+            "cantidad": 1
+          },
+          {
+            "codigo": "HAM-03",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-03",
+                "cantidad": 1
+              }
+            ]
+          },
+          {
+            "codigo": "BEB-05",
+            "cantidad": 1,
+            "en_leche": true,
+            "nota": "de mora"
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "La América"
+      },
+      "esperado": {
+        "total": 65000,
+        "tiempo": 38
+      },
+      "run": "5ddf1144-b6c4-447e-b53d-c818b13c569d",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "La América",
+        "detalle": "1 x Hamburguesa de pollo\n1 x Hamburguesa de la casa (Carne adicional)\n1 x Jugo natural en leche · de mora",
+        "desglose": [
+          "1 x Hamburguesa de pollo: $20.000",
+          "1 x Hamburguesa de la casa (Carne adicional): $33.000",
+          "1 x Jugo natural en leche · de mora: $7.000"
+        ],
+        "subtotal": 60000,
+        "domicilio": 5000,
+        "total": 65000,
+        "tiempo_estimado_min": 38
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E17",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-02",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-04",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "total": 21500,
+        "tiempo": 15
+      },
+      "run": "1800408e-05eb-4e3d-b7d9-32c618c46030",
+      "salida": {
+        "ok": true,
+        "tipo": "recoger",
+        "zona": "Recoger en el local",
+        "detalle": "1 x Hamburguesa clásica (Huevo)",
+        "desglose": [
+          "1 x Hamburguesa clásica (Huevo): $21.500"
+        ],
+        "subtotal": 21500,
+        "domicilio": 0,
+        "total": 21500,
+        "tiempo_estimado_min": 15
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "E18",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "SAL-01",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-08",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Laureles"
+      },
+      "esperado": {
+        "total": 22000,
+        "tiempo": 22
+      },
+      "run": "1ebd82c4-7f67-4923-9c83-6db1843f3867",
+      "salida": {
+        "ok": true,
+        "tipo": "domicilio",
+        "zona": "Laureles",
+        "detalle": "1 x Salchipapa sencilla (Chorizo)",
+        "desglose": [
+          "1 x Salchipapa sencilla (Chorizo): $19.000"
+        ],
+        "subtotal": 19000,
+        "domicilio": 3000,
+        "total": 22000,
+        "tiempo_estimado_min": 22
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: mínimo",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PER-01",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Laureles"
+      },
+      "esperado": {
+        "motivo": "mínimo"
+      },
+      "run": "218f4c85-220e-40e4-baed-f4a6b3245339",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "El domicilio pide mínimo $15.000 en productos y el pedido va en $12.000."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: cerveza",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "BEB-06",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "solo para tomar en el local"
+      },
+      "run": "cacb442e-00db-4271-86a1-8f087993e229",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "La cerveza es solo para tomar en el local: no va a domicilio ni para recoger."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: Poblado",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PIC-02",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "El Poblado"
+      },
+      "esperado": {
+        "motivo": "No hay domicilio a El Poblado"
+      },
+      "run": "899979ef-a123-4878-8209-b66ec015e1ad",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "No hay domicilio a El Poblado. No hay domicilio: ofrecer recoger en el local"
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: zona inventada",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PIC-02",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "domicilio",
+        "zona": "Envigado"
+      },
+      "esperado": {
+        "motivo": "zona_desconocida"
+      },
+      "run": "649aac6c-6696-4f87-aa37-7d4f806bd6cb",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "zona_desconocida: \"Envigado\" no está en las zonas de domicilio. Ofrece recoger en el local."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: aguacate agotado",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-02",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-06",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "no está disponible"
+      },
+      "run": "879295bb-8d54-4d38-aef7-321df62f02db",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "Aguacate no está disponible hoy."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: tocineta a perro",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "PER-01",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-02",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "no se le puede agregar"
+      },
+      "run": "c207b045-81f0-4491-ad88-39a2b7163874",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "Tocineta no se le puede agregar a Perro sencillo."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: salsa a bebida",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "BEB-03",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-09",
+                "cantidad": 1
+              }
+            ]
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "no se le puede agregar"
+      },
+      "run": "81b3be83-819c-41a0-b7b5-6b4335ef8581",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "Salsa de ajo extra no se le puede agregar a Limonada natural."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: queso x3",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-02",
+            "cantidad": 1,
+            "adiciones": [
+              {
+                "codigo": "AD-01",
+                "cantidad": 3
+              }
+            ]
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "máximo 2"
+      },
+      "run": "160cff24-4972-4f7a-b72e-853de9a5af73",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "Queso extra: máximo 2 por Hamburguesa clásica."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: código inventado",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-01",
+            "cantidad": 1
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "No existe el producto HAM-01"
+      },
+      "run": "b4ef2405-d27f-4c51-b103-08781e869556",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "No existe el producto HAM-01."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: cantidad 25",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "HAM-02",
+            "cantidad": 25
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "Cantidad no válida"
+      },
+      "run": "2660c355-4627-49a3-a97e-b759cea5050a",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "Cantidad no válida para Hamburguesa clásica."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: leche a limonada",
+      "entrada": {
+        "lineas": [
+          {
+            "codigo": "BEB-03",
+            "cantidad": 1,
+            "en_leche": true
+          }
+        ],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "en leche"
+      },
+      "run": "62669479-47c9-44c3-9736-0d20bc6c36c6",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "Solo el jugo natural se puede pedir en leche."
+        ]
+      },
+      "error": null,
+      "ok": true
+    },
+    {
+      "prueba": "rechazo: pedido vacío",
+      "entrada": {
+        "lineas": [],
+        "tipo": "recoger",
+        "zona": "Recoger en el local"
+      },
+      "esperado": {
+        "motivo": "no trae productos"
+      },
+      "run": "86309595-660e-4cab-9d77-1d14e904ef57",
+      "salida": {
+        "ok": false,
+        "errores": [
+          "El pedido no trae productos."
+        ]
+      },
+      "error": null,
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+codigo,categoria,producto,descripcion,precio,tiempo_min,disponible,notas
+HAM-02,Hamburguesas,Hamburguesa clásica,"Carne 150 g en pan brioche, lechuga, tomate, cebolla, salsas",19500,15,Sí,
+HAM-03,Hamburguesas,Hamburguesa de la casa,"Doble carne, tocineta, queso cheddar, cebolla caramelizada",26000,18,Sí,La más pedida
+HAM-04,Hamburguesas,Hamburguesa de pollo,"Pechuga apanada, lechuga, tomate, mayonesa de ajo",20000,15,Sí,
+HAM-05,Hamburguesas,Hamburguesa vegetariana,"Torta de lentejas y champiñones, lechuga, tomate",19000,15,No,
+PER-01,Perros,Perro sencillo,"Salchicha, papa ripio, queso, salsas",12000,8,Sí,
+PER-02,Perros,Perro especial,"Salchicha, tocineta, maicitos, ripio",16000,10,Sí,Sin queso gratinado por ahora (se agotó)
+PER-03,Perros,Perro mexicano,"Salchicha, guacamole, jalapeños, pico de gallo",17000,10,No,
+SAL-01,Salchipapas,Salchipapa sencilla,"Papas a la francesa, salchicha, salsas",14000,12,Sí,
+SAL-02,Salchipapas,Salchipapa especial,"Papas, salchicha, chorizo, huevo",22000,15,Sí,Sin queso gratinado por ahora (se agotó)
+SAL-03,Salchipapas,Salchipapa familiar,"Para 3 o 4. Papas, salchicha, chorizo, butifarra, queso",38000,20,Sí,
+ALM-01,Almuerzos,Bandeja paisa,"Frijoles, arroz, chicharrón, carne molida, huevo, arepa, plátano, aguacate",28000,20,Sí,Solo mediodía
+ALM-02,Almuerzos,Almuerzo del día,Sopa + seco. Cambia todos los días,15000,10,Sí,Solo mediodía. El detalle del día lo confirma cocina
+ALM-03,Almuerzos,Pechuga a la plancha,"Con arroz, ensalada y papa salada",21000,18,Sí,Solo mediodía
+PIC-01,Picadas,Picada personal,"Chorizo, chicharrón, papa criolla, arepa",24000,20,Sí,
+PIC-02,Picadas,Picada familiar,"Chorizo, chicharrón, costilla, morcilla, papa criolla, arepa",45000,30,Sí,
+COM-01,Combos,Combo Toño,Hamburguesa clásica (pan brioche) + porción de papas + gaseosa personal,26000,15,Sí,Se puede cambiar la gaseosa por limonada pagando la diferencia
+BEB-01,Bebidas,Gaseosa personal 400 ml,"Coca-Cola, Postobón manzana, Colombiana",4000,,Sí,
+BEB-02,Bebidas,"Gaseosa 1,5 L","Coca-Cola, Postobón manzana",8000,0,Sí,
+BEB-03,Bebidas,Limonada natural,Limonada natural,6000,5,Sí,
+BEB-04,Bebidas,Limonada de coco,Limonada de coco,9000,5,Sí,
+BEB-05,Bebidas,Jugo natural en agua,"Mora, lulo, maracuyá, mango",6000,5,Sí,En leche +$1.000
+BEB-06,Bebidas,Cerveza nacional,"Águila, Poker, Club Colombia",6000,0,Sí,Solo para tomar en el local: no va a domicilio ni para recoger
+POS-01,Postres,Brownie con helado,Brownie con helado,9000,5,No,
+POS-02,Postres,Flan de caramelo,Flan de caramelo,7000,2,No,
