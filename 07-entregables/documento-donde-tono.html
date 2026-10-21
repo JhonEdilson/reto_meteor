@@ -3,29 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Donde Toño · Decisiones, pruebas y limitaciones</title>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  @page { size: Letter; margin: 1.3cm 1.5cm 1.3cm 1.5cm; }
-  :root { --ink: #2d3142; --muted: #4f5d75; --soft: #7a8399; --rule: rgba(45,49,66,0.14); --accent: #eb6c36; --wash: #f3f3f1; }
+  @page { size: Letter; margin: 1.25cm 1.45cm 1.2cm 1.45cm; }
+  :root { --ink: #22283a; --muted: #4f5d75; --rule: rgba(34,40,58,0.14); --accent: #d9622b; --wash: #f2f3f5; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Geist', system-ui, sans-serif; font-size: 9pt; line-height: 1.4; color: var(--ink); }
-  h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 21pt; line-height: 1.1; letter-spacing: -0.01em; }
-  .eyebrow { font-family: 'Geist Mono', monospace; font-size: 6.8pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 3pt; }
+  body { font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 8.7pt; line-height: 1.34; color: var(--ink); }
+  h1 { font-weight: 600; font-size: 17pt; line-height: 1.15; letter-spacing: -0.01em; }
+  .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 6.6pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 3pt; }
   .byline { color: var(--muted); margin-top: 2pt; margin-bottom: 7pt; }
-  h2 { font-size: 9.6pt; font-weight: 600; margin: 8pt 0 3pt; padding-bottom: 2pt; border-bottom: 0.8pt solid var(--rule);
+  h2 { font-size: 9.6pt; font-weight: 600; margin: 7pt 0 3pt; padding-bottom: 2pt; border-bottom: 0.8pt solid var(--rule);
        break-after: avoid; page-break-after: avoid; }
-  h2 .n { font-family: 'Geist Mono', monospace; color: var(--accent); font-weight: 500; margin-right: 4pt; }
+  h2 .n { font-family: 'IBM Plex Mono', monospace; color: var(--accent); font-weight: 500; margin-right: 5pt; }
+  h3 { font-size: 8.7pt; font-weight: 600; margin: 4pt 0 1.5pt; break-after: avoid; page-break-after: avoid; }
   p { margin-bottom: 3pt; orphans: 3; widows: 3; }
-  ul { padding-left: 11pt; margin-bottom: 3pt; }
-  li { margin-bottom: 1.6pt; break-inside: avoid; page-break-inside: avoid; }
+  ul, ol { padding-left: 12pt; margin-bottom: 3pt; }
+  li { margin-bottom: 1.5pt; break-inside: avoid; page-break-inside: avoid; }
   b { font-weight: 600; }
-  code { font-family: 'Geist Mono', monospace; font-size: 7.6pt; }
-  .entrega { background: var(--wash); border-radius: 6px; padding: 6pt 9pt; display: grid; grid-template-columns: 1.15fr 1fr; gap: 2pt 14pt; }
+  code { font-family: 'IBM Plex Mono', monospace; font-size: 7.9pt; }
+  .entrega { background: var(--wash); border-radius: 6px; padding: 6pt 9pt; display: grid; grid-template-columns: 1.1fr 1fr; gap: 3pt 14pt; }
   .entrega div { break-inside: avoid; }
-  .entrega .k { font-family: 'Geist Mono', monospace; font-size: 6.6pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .entrega .k { font-family: 'IBM Plex Mono', monospace; font-size: 6.4pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14pt; }
-  .nota { color: var(--muted); }
-  .keep { break-inside: avoid; page-break-inside: avoid; }
 </style>
 </head>
 <body>
@@ -36,35 +35,62 @@
 
 <div class="entrega">
   <div><span class="k">Agente</span><br>Lau, en <b>Conversación de prueba</b> del workspace "Donde Toño - Jhon Escobar". El correo de registro va en el mensaje de entrega.</div>
-  <div><span class="k">Registro de pedidos</span><br><b>Pedidos</b>: donde caen los reales (hoy trae 4 ejemplos marcados como ficticios). <b>Pedidos de prueba</b>: los 19 de mis pruebas, aparte para no ensuciar producción.</div>
-  <div><span class="k">Pruebas</span><br>Colección <b>Evals</b> (una fila por escenario) y el repositorio con spec, código y evidencia. Diagrama de arquitectura adjunto.</div>
-  <div><span class="k">Tiempo</span><br>Unas <b>7 h 45</b> de trabajo activo: lunes 2 h 15 (1 h 30 de ellas aprendiendo la plataforma), martes 2 h 45 y miércoles 2 h 45.</div>
+  <div><span class="k">Registro de pedidos</span><br><b>Pedidos</b>: los reales (hoy con 4 ejemplos marcados como ficticios). <b>Pedidos de prueba</b>: los 19 de mis pruebas, aparte para no ensuciar producción.</div>
+  <div><span class="k">Pruebas</span><br>Colección <b>Evals</b>, con una fila por escenario, y el repositorio con spec, código y evidencia. Diagrama adjunto.</div>
+  <div><span class="k">Tiempo</span><br>Unas <b>7 h 45</b> de trabajo activo: lunes 2 h 15 (1 h 30 aprendiendo la plataforma), martes 2 h 45 y miércoles 2 h 45.</div>
 </div>
 
 <h2><span class="n">01</span>Cómo está armado</h2>
-<p>Lau conversa y entiende el pedido, pero <b>no suma</b>. El total, el domicilio y el tiempo los calcula la Función <code>cotizar_pedido</code>: un flujo de Meteor que lee el Menú, las Adiciones y las Zonas y hace la cuenta en JavaScript, igual cada vez. <code>crear_pedido</code> solo funciona si se cotizó en el mismo turno, y copia el resultado del cálculo, no lo que escribió el modelo. Cada dato vive en un solo lugar: precios y disponibilidad en las colecciones, el horario en el horario nativo y las reglas de conversación en las instrucciones de Lau. Así un cambio en vivo (un precio, un producto agotado, una zona) es editar una fila.</p>
+<ul>
+  <li><b>Lau conversa y entiende el pedido, pero no suma.</b> El total, el domicilio y el tiempo los calcula la Función "<code>cotizar_pedido</code>", un flujo de Meteor que lee las colecciones y hace la cuenta en JavaScript, igual cada vez.</li>
+  <li><b>Registrar exige cotizar.</b> "<code>crear_pedido</code>" solo funciona si se cotizó en el mismo turno, y copia el resultado del cálculo, no lo que escribió el modelo.</li>
+  <li><b>Cada dato vive en un solo lugar:</b> precios, tiempos y disponibilidad en las colecciones, franjas y festivos en el horario nativo, y reglas de conversación en las instrucciones de Lau. Un cambio en vivo (un precio, un producto agotado, una zona) es editar una fila.</li>
+  <li><b>Pasar a una persona:</b> la Función "<code>pasar_a_humano</code>" deja la conversación con el equipo en una queja, un pedido grande o un barrio que no está en la lista.</li>
+</ul>
 
 <h2><span class="n">02</span>Supuestos</h2>
 <div class="dos">
 <ul>
-  <li><b>Salchipapa especial sin queso gratinado: $22.000.</b> Meteor confirmó que el perro especial mantiene su precio; por la salchipapa no respondió.</li>
+  <li><b>Salchipapa especial sin queso gratinado: $22.000.</b> Meteor confirmó que el perro especial mantiene su precio, por la salchipapa no respondió.</li>
   <li><b>El mínimo de $15.000</b> es sobre los productos, sin contar el domicilio.</li>
   <li><b>Tiempo del pedido</b> = el producto más demorado + el trayecto de la zona. Los trayectos son los de un viernes en la noche, así que entre semana el pedido llega antes de lo prometido, nunca después.</li>
   <li><b>"Para cuándo"</b> es siempre "lo antes posible": no hay pedidos programados.</li>
 </ul>
 <ul>
-  <li><b>Cerveza "solo en el local"</b>: no entra ni a domicilio ni para recoger, porque los dos son para llevar.</li>
+  <li><b>Cerveza "solo en el local":</b> no entra ni a domicilio ni para recoger, porque los dos son para llevar.</li>
   <li><b>"Queso gratinado" agotado</b> aplica a todo producto que lo lleve (perro y salchipapa especial): se vende sin él y se le avisa al cliente. "Queso" a secas es el tajado, que sí hay.</li>
   <li><b>Salsa de ajo "para todos"</b> = toda la comida, no las bebidas.</li>
-  <li><b>Almuerzo del día</b>: se vende como "sopa y seco del día"; el detalle lo confirma cocina.</li>
+  <li><b>Almuerzo del día:</b> se vende como "sopa y seco del día", el detalle lo confirma cocina.</li>
   <li><b>La frase fija del chat de prueba</b> (ver 05) es del canal y no de Lau: el pedido sí queda registrado.</li>
 </ul>
 </div>
 
 <h2><span class="n">03</span>Preguntas a Toño</h2>
-<p><b>Antes de construir.</b> De 20 preguntas posibles envié 10: solo las que cambian un precio, un total o lo que se puede vender y que la hoja no responde. Cada una llevaba entre paréntesis el supuesto que usaría si no respondía, para no frenar el trabajo. Las respuestas quedaron como reglas citadas: la clásica de $18.000 sobraba y el combo lleva la de brioche; el combo acepta adiciones; la picada familiar vale $45.000; el chorizo aplica a salchipapas y picadas; solo falta el queso gratinado y el aguacate como adición; tiempos de domicilio por zona; un barrio que no está en la lista no se asume; el Centro cuesta $6.000 y 25 min; los festivos usan el horario del domingo aunque caigan lunes; con el local cerrado solo se informa el horario.</p>
-<p><b>Seguimiento.</b> ¿Los productos sin queso gratinado mantienen su precio? (perro sí; salchipapa sin respuesta, queda como supuesto) y ¿la bandeja paisa es de 2 o de 20 min? (20). Quedó anotada una contradicción: la respuesta dice que los tiempos de domicilio están "en la hoja", y la hoja no los trae; se tomaron de la respuesta.</p>
-<p><b>Lo que le preguntaría ahora</b>, ya con el agente funcionando:</p>
+<h3>Antes de construir: 10 de 20</h3>
+<p>Solo envié las que cambian un precio, un total o lo que se puede vender y que la hoja no responde. Cada una llevaba el supuesto que usaría si no respondía, para no frenar el trabajo. Las respuestas quedaron como reglas citadas:</p>
+<div class="dos">
+<ul>
+  <li><b>Clásica duplicada:</b> la de $18.000 sobraba, el combo lleva la de brioche.</li>
+  <li><b>Combo:</b> acepta las adiciones de cualquier hamburguesa.</li>
+  <li><b>Picada familiar:</b> $45.000.</li>
+  <li><b>Chorizo "Parrilla":</b> aplica a salchipapas y picadas.</li>
+  <li><b>Queso:</b> solo falta el gratinado, y el aguacate como adición.</li>
+</ul>
+<ul>
+  <li><b>Domicilios:</b> tiempo de trayecto por zona.</li>
+  <li><b>Barrio fuera de la lista:</b> no se asume, se ofrece recoger.</li>
+  <li><b>Centro:</b> $6.000 y 25 min.</li>
+  <li><b>Lunes festivo:</b> horario del domingo.</li>
+  <li><b>Local cerrado:</b> solo se informa el horario.</li>
+</ul>
+</div>
+<h3>Seguimiento</h3>
+<ul>
+  <li>¿Los productos sin queso gratinado mantienen su precio? Perro sí, salchipapa sin respuesta (queda como supuesto).</li>
+  <li>¿La bandeja paisa es de 2 o de 20 min? 20.</li>
+  <li>Contradicción anotada: los tiempos de domicilio, según la respuesta, están "en la hoja", y no están. Se tomaron de la respuesta.</li>
+</ul>
+<h3>Lo que le preguntaría ahora</h3>
 <ul>
   <li>¿Cuántos pedidos entran un viernes en la noche y cuántos se pierden? Es la línea base para medir si el agente sirve.</li>
   <li>¿Quién del equipo atiende cuando Lau pasa una queja o un pedido grande, en cuánto tiempo y en qué horario?</li>
@@ -74,37 +100,60 @@
 <h2><span class="n">04</span>Qué quedó por fuera y por qué</h2>
 <ul>
   <li><b>Pagos en línea, POS, facturación, app o web e impresora de comandas:</b> fuera de alcance según el reto.</li>
-  <li><b>Cobrar o validar transferencias:</b> la hoja dice que se paga "al recibir"; Lau solo registra cómo va a pagar.</li>
+  <li><b>Cobrar o validar transferencias:</b> la hoja dice que se paga "al recibir", Lau solo registra cómo va a pagar.</li>
   <li><b>Pedidos anticipados:</b> Toño respondió que no se toman.</li>
-  <li><b>Tiempo según la carga de la cocina:</b> Toño dijo que todo se prepara en paralelo y que los tiempos ya son los de un viernes; no hay datos de carga. Mejora: un campo de "demora actual" que Toño suba en hora pico.</li>
-  <li><b>Apagar productos por insumo y menú diario del almuerzo:</b> dependen de que alguien actualice algo cada día. Hoy la columna Disponible es la fuente de verdad. Mejora: cargar el almuerzo cada mañana.</li>
-  <li><b>Dashboard, CRM aparte o tablero Kanban:</b> el reto acepta una colección o vista, y lo nativo de Meteor alcanza. El Kanban por estado queda como mejora.</li>
-  <li><b>WhatsApp y widget web (dónde me topé con la plataforma):</b> no hubo número de pruebas y conectar uno propio no hacía falta, porque el reto acepta el chat del workspace. El widget no aparece solo en un sitio de Sitios Web y su enlace público no está documentado; lo dejé tras un intento con tiempo acotado.</li>
-  <li><b>Funciones y colecciones solo para pruebas</b> (o un workspace de staging): mejora para producción. Hoy las pruebas pasan por el <code>crear_pedido</code> real, que es lo que hay que probar, y un script mueve cada pedido de prueba a su colección.</li>
-  <li><b>Sin probar:</b> el cruce de medianoche (un viernes a las 00:45 sigue abierto el turno del viernes); el E15 a mano, que ya pasó por API; y confirmar la causa de la frase fija (ver 05), por energía, porque exigía exponerle Pedidos al modelo y porque no cambia la entrega.</li>
+  <li><b>Tiempo según la carga de la cocina:</b> Toño dijo que todo se prepara en paralelo y que los tiempos ya son los de un viernes. Mejora: un campo de "demora actual" para la hora pico.</li>
+  <li><b>Apagar productos por insumo y menú diario del almuerzo:</b> dependen de que alguien actualice algo cada día, hoy la columna Disponible es la fuente de verdad.</li>
+  <li><b>Dashboard, CRM aparte o Kanban:</b> el reto acepta una colección o vista, y lo nativo de Meteor alcanza.</li>
+  <li><b>WhatsApp y widget web (dónde me topé con la plataforma):</b> no hubo número de pruebas y el reto acepta el chat del workspace. El widget no aparece solo en Sitios Web y su enlace público no está documentado, lo dejé tras un intento con tiempo acotado.</li>
+  <li><b>Funciones y colecciones solo para pruebas</b> (o un workspace de staging): mejora para producción. Hoy las pruebas pasan por el "<code>crear_pedido</code>" real, que es lo que hay que probar, y un script mueve cada pedido de prueba a su colección.</li>
+  <li><b>Sin probar:</b> el cruce de medianoche (un viernes a las 00:45 sigue abierto el turno del viernes), el E15 a mano (ya pasó por API) y la causa de la frase fija (ver 05), por energía, porque exigía exponerle Pedidos al modelo y porque no cambia la entrega.</li>
 </ul>
 
 <h2><span class="n">05</span>Qué sé que puede fallar</h2>
 <ul>
-  <li><b>En el chat de prueba, todo pedido termina con una frase fija:</b> "No pude verificar el estado del pedido. Necesitamos revisar el registro existente…". El pedido <b>sí queda registrado</b> con todos sus datos, pero el cliente podría volver a pedir. Por API, Lau confirmó con el número en 11 de 11 registros. Descarté el prompt (la regla prohíbe la frase y sale igual), el formato del resultado (un JSON con <code>ok: true</code> da lo mismo) y la visibilidad de la colección. Hipótesis sin probar: el canal intenta verificar lo que escribió la Función y no puede, porque Pedidos está oculta al modelo. Si se confirma, el arreglo es una Función <code>consultar_pedido(numero)</code> que devuelva solo ese pedido.</li>
-  <li><b>Energía:</b> una conversación con pedido cuesta cerca de US$0,30 y al entregar quedan unos US$0,70. Si se acaba, Lau deja de responder y parece caído.</li>
+  <li><b>En el chat de prueba, todo pedido termina con una frase fija:</b> "No pude verificar el estado del pedido…". El pedido <b>sí queda registrado</b> con todos sus datos, pero el cliente podría volver a pedir.
+    <ul>
+      <li>Por API, Lau confirmó con el número en 11 de 11 registros.</li>
+      <li>Descartado: el prompt (la regla prohíbe la frase y sale igual), el formato del resultado (un JSON con <code>ok: true</code> da lo mismo) y la visibilidad de la colección.</li>
+      <li>Hipótesis sin probar: el canal intenta verificar lo que escribió la Función y no puede, porque Pedidos está oculta al modelo. Arreglo si se confirma: una Función "<code>consultar_pedido</code>" que devuelva solo ese pedido.</li>
+    </ul></li>
+  <li><b>Energía:</b> una conversación con pedido cuesta cerca de US$0,30 y quedan unos US$0,70. Si se acaba, Lau deja de responder y parece caído.</li>
   <li><b>Un solo contacto de prueba compartido:</b> si dos personas prueban a la vez se mezclan las conversaciones, y resetear borra el historial. Tras pasar a una persona, Lau calla 2 min (en producción serían 5 h).</li>
-  <li><b>Narración:</b> a veces Lau comenta su proceso ("ya los verifiqué"). Se corrigió en las instrucciones y queda un caso aislado.</li>
-  <li><b>Cruce de medianoche</b> sin probar. Si falla, el corte de domicilios pasa al cálculo en JS.</li>
+  <li><b>Narración:</b> a veces Lau comenta su proceso ("ya los verifiqué"). Se corrigió en las instrucciones, queda un caso aislado.</li>
+  <li><b>Cruce de medianoche</b> sin probar. Si falla, el corte de domicilios pasa al cálculo en JavaScript.</li>
   <li><b>El trial vence el lunes 26 de octubre.</b></li>
 </ul>
 
 <h2><span class="n">06</span>Cómo lo probé</h2>
-<ul>
-  <li><b>El cálculo, aparte de la conversación:</b> 12 pedidos con total conocido y 12 rechazos (cerveza, máximo de adiciones, zona, mínimo), contra totales calculados por un script independiente. 24 de 24, primero en local y después dentro de Meteor.</li>
-  <li><b>La conversación:</b> 24 escenarios escritos antes de construir (Dado / Cuando / Entonces). 20 por API, con <code>POST /runs</code>: checks automáticos (total, tiempo, Funciones llamadas, nada de inventos) y lectura de cada transcripción, porque los checks no vieron dos fallas reales. 4 a mano en el chat (corte de domicilios, almuerzo fuera de hora, queja y nota de voz) y el pedido base repetido en PC y celular.</li>
-  <li><b>Resultado en Evals:</b> 21 pasan, 3 pasan con observación (la narración, y dos pasos a una persona que por API no se pueden completar y el E19 sí probó a mano) y 1 limitación (la frase fija).</li>
-  <li><b>Fallas reales encontradas y corregidas:</b> el lunes festivo salía cerrado; a un cliente le llegó solo "Déjame verificar…" sin respuesta; en la primera prueba, asteriscos sin formato, una dirección sin calle y un registro rechazado por no cotizar en el mismo turno. Cada arreglo se volvió a probar.</li>
-  <li><b>Costo de las pruebas:</b> unos US$3,30 de energía el miércoles, medidos con el saldo antes y después.</li>
-</ul>
+<ol>
+  <li><b>El cálculo, aparte de la conversación:</b> 12 pedidos con total conocido y 12 rechazos (cerveza, máximo de adiciones, zona, mínimo), contra totales de un script independiente. 24 de 24, en local y dentro de Meteor.</li>
+  <li><b>La conversación:</b> 24 escenarios escritos antes de construir (Dado / Cuando / Entonces).
+    <ul>
+      <li>20 por API (<code>POST /runs</code>): checks automáticos de total, tiempo y Funciones llamadas, y lectura de cada transcripción, porque los checks no vieron dos fallas reales.</li>
+      <li>4 a mano en el chat (corte de domicilios, almuerzo fuera de hora, queja y nota de voz), y el pedido base repetido en PC y celular.</li>
+    </ul></li>
+  <li><b>Resultado en Evals:</b> 21 pasan, 3 pasan con observación (la narración, y dos pasos a una persona que por API no se completan y el E19 sí probó a mano) y 1 limitación (la frase fija).</li>
+  <li><b>Fallas reales encontradas y corregidas:</b> el lunes festivo salía cerrado, a un cliente le llegó solo "Déjame verificar…", y en la primera prueba hubo asteriscos sin formato, una dirección sin calle y un registro rechazado por no cotizar en el mismo turno. Cada arreglo se volvió a probar.</li>
+  <li><b>Costo:</b> unos US$3,30 de energía el miércoles, medidos con el saldo antes y después.</li>
+</ol>
 
 <h2><span class="n">07</span>Uso de la IA</h2>
-<p>Trabajé con Claude Code: escribió la mayor parte del código, los documentos y las llamadas a la API. Yo definí el alcance (mi primera pregunta fue si estábamos sobreconstruyendo), tomé las decisiones (el cálculo determinista, pasar a "una persona del equipo" y no a Toño, separar los pedidos de prueba, cuándo dejar de investigar) y probé a mano lo que la API no podía ver. Comparar los dos caminos, API y chat real, fue lo que encontró la limitación principal.</p>
+<p>Trabajé con <b>Claude Code y el modelo Claude Opus 5.5</b>: escribió la mayor parte del código, los documentos y las llamadas a la API. Mis decisiones:</p>
+<div class="dos">
+<ul>
+  <li><b>Contexto primero:</b> le di todo el reto y la documentación de Meteor antes de pedir nada.</li>
+  <li><b>Alcance antes que código:</b> mi primera pregunta fue si estábamos sobreconstruyendo.</li>
+  <li><b>Plan antes de ejecutar:</b> cada paso grande pasó por modo plan, con preguntas hasta tener claro qué construir.</li>
+  <li><b>Proyecto ordenado:</b> carpetas por etapa y un tablero con el avance y el tiempo.</li>
+</ul>
+<ul>
+  <li><b>Diseño:</b> el cálculo determinista, pasar a "una persona del equipo" y no a Toño, separar los pedidos de prueba.</li>
+  <li><b>Verificar antes de asumir:</b> confirmé que las inconsistencias de la hoja fueran huecos reales antes de tratarlas como tales.</li>
+  <li><b>Pruebas a mano</b> de lo que la API no podía ver. Comparar API y chat real encontró la limitación principal.</li>
+  <li><b>Cuándo parar:</b> la frase fija quedó como limitación tras 3 causas descartadas.</li>
+</ul>
+</div>
 
 </body>
 </html>
